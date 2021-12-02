@@ -1,0 +1,544 @@
+.page{
+    background: 
+    radial-gradient(circle at 60% 0,
+    #3380BA,
+      rgba(255, 255, 255, 0) 90.71%),
+    radial-gradient(circle at 6.7% 75%,
+    #245a83,
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 45%,
+    #173b57,
+      rgba(255, 255, 255, 0) 50.71%) ;
+    height: 100vh;
+}
+
+.portrait{
+  display: none;
+
+}
+.headingOne{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.divOne{
+    width: 100vw;
+    text-align: center;
+    padding: 3% 0 1% 0;
+}
+
+.exitButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 3%;
+    margin-right: 3%;
+    background-color: #D4190C;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #D4190C;
+
+    transition: ease 0.5s;
+
+}
+
+
+.exitButton:hover{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 3%;
+    margin-right: 3%;
+    background-color: white;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: #3380BA;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: ease 0.5s;
+}
+
+.restartButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 3%;
+    margin-right: 13%;
+    background-color: #F4A236;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #F4A236;
+
+    transition: ease 0.5s;
+
+}
+
+
+.restartButton:hover{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 3%;
+    margin-right: 13%;
+    background-color: white;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: #3380BA;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: ease 0.5s;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left, .right {
+    width: 30%;
+    height: 55vh;
+  }
+  
+  .middle {
+    width: 35%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.game{
+    padding-left: 2%;
+}
+
+.blockL{
+    background-color: white;
+    text-align: center;
+    // margin-bottom: auto;
+    margin-top: 30%;
+    margin-right: 10%;
+    background-image: linear-gradient(#ADD0E9, #5A9AC9);
+    padding: 10% 0 10% 0;
+    width: 55%;
+    float: right;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+
+}
+
+
+
+.blockR{
+    background-color: white;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 30%;
+    margin-right: 35%;
+    background-image: linear-gradient(#ADD0E9, #5A9AC9);
+    padding: 10% 0 10% 0;
+    width: 55%;
+    float: right;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+
+}
+
+.blockM{
+    height: 72vh;
+    background: rgb(99,160,205);
+    background: linear-gradient(210deg, rgba(99,160,205,1) 0%, rgba(197,222,240,1) 100%);
+    border-radius: 10px;
+    }
+
+
+.imageP1{
+    height: 200px;
+}
+
+.imageP2{
+    height: 180px;
+    margin-top: 7%;
+}
+
+.blockMM{
+    background-image: url(../../assets/img/matchh.png);
+    height: 72vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+    border-radius: 10px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    gap: 16px;
+
+    justify-content: center;
+}
+
+.gameM{
+    display: none;
+}
+
+.turnDivR{
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -8vh;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 15px;
+    transition: ease 0.5s;
+
+}
+
+.turnDivL{
+    background-color: #0AB169;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -8vh;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 15px;
+    transition: ease 0.5s;
+
+}
+
+.textturn{
+    color: #5A9AC9;
+    font-weight: 600;
+}
+
+.textturn2{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.divFull{
+    height: 100%;
+}
+
+@media screen and (max-width: 1792px) and (orientation: landscape) {
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(18, 50px);
+        gap: 40px;
+    
+        justify-content: center;
+    }
+
+    .gameM{
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 78vh;
+        padding-top: 2%;
+    }
+
+    .divFull{
+        display: none;
+    }
+
+    .gameBg{
+        background-image: linear-gradient(to bottom right, #C2DDEF, #7BB1D8);
+        padding: 0.5% 1.5% 2% 0;
+        border-radius: 20px;
+        height: 55vh;
+    }
+
+    .columnMobileL {
+        margin-left: 2.5%;
+        float: left;
+        width: 44%;
+        background-image: linear-gradient(to right, #B0D3EB , #4587BA);
+        border-radius: 20px;
+        position: relative;
+        
+    }
+
+      .columnMobileM{
+          width: 7.5%;
+          float: left;
+          text-align: center;
+          margin-top: 50px;
+
+      }
+
+      .columnMobileR {
+        float: left;
+        width: 43.5%;
+        background-image: linear-gradient(to left, #B0D3EB , #4587BA);
+
+        border-radius: 20px;
+        position: relative;
+      }
+
+      /* Clear floats after the columns */
+      .rowMobile:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .imageP1{
+          height: 110px;
+      }
+
+      .imageP2{
+        height: 110px;
+        float: right;
+    }
+
+      .textMobileS{
+          color: white;
+          font-size: 35px;
+          font-weight: 500;
+          padding-top: 45px;
+      }
+
+      .textMobileP{
+        color: white;
+        font-size: 35px;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        margin-top: 6.5%;
+      }
+
+      .textmobileScore{
+        color: white;
+        font-size: 35px;
+        font-weight: 500;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 6.5%;
+        margin-right: 3%;
+      }
+
+      .textmobileScoreR{
+        color: white;
+        font-size: 35px;
+        font-weight: 500;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 6.5%;
+        margin-left: 3%;
+      }
+
+      .gameBgMatch{
+        padding: 0.5% 1.5% 2% 0;
+        border-radius: 20px;
+        background-image: url(../../assets/img/matchhM.png);
+        z-index: 9999;
+        background-size: cover;
+        background-position: center;
+        height: 55vh;
+      }
+
+      .mobCol{
+        width: 25%; 
+        float: left;
+      }
+
+      .mobColR{
+        width: 25%; 
+        float: right;
+      }
+
+      .mobColRText{
+        width: 25%; 
+        float: right;
+        margin-right: 15%;
+      }
+
+      .headingOne{
+        color: white;
+        font-size: 60px;
+        font-weight: 600;
+    }
+  .textMobileT{
+    color: #489DDA;
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        margin-top: 4%;
+        margin-left: 32%;
+        background-color: white;
+        height: 35%;
+        padding: 20px 30px 0 30px;
+        border-radius: 10px;
+
+  }
+
+  .textMobileTR{
+    color: #489DDA;
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        margin-top: 4%;
+        margin-left: 12%;
+        background-color: white;
+        height: 35%;
+        padding: 20px 30px 0 30px;
+        border-radius: 10px;
+
+  }
+      
+}
+@media screen and (max-width: 812px) and (orientation: landscape) {
+
+
+  .grid{
+    margin-top: 35px;
+    margin-right: 15px;
+    grid-template-columns: repeat(18, 1px);
+    gap: 40px;
+
+  }
+
+  .divOne{
+    padding-top: 1%;
+  }
+
+  .headingOne{
+    font-size: 30px
+  }
+
+  .restartButton{
+    font-size: 10px;
+    padding: 0.5% 1% 0.5% 1%;
+  }
+
+  .restartButton:hover{
+    font-size: 10px;
+    padding: 0.5% 1% 0.5% 1%;
+  }
+
+  .exitButton{
+    font-size: 10px;
+    padding: 0.5% 1% 0.5% 1%;
+  }
+
+  .exitButton:hover{
+    font-size: 10px;
+    padding: 0.5% 1% 0.5% 1%;
+  }
+
+
+  .imageP1{
+    height: 40px;
+    padding: 5px 0 5px 0;
+  }
+
+  .imageP2{
+    height: 40px;
+    padding: 5px 0 5px 0;
+  }
+
+  .gameBg{
+    border-radius: 10px;
+    height: 55vh;
+    margin-top: -10px;
+  }
+
+  .textMobileP{
+    font-size: 20px;
+    margin-top: 5.5%;
+
+  }
+
+  .textMobileT{
+    font-size: 10px;
+    margin-left: 28%;
+    margin-top: 4%;
+    padding: 5px 30px 5px 30px;
+  }
+
+  .textMobileTR{
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    margin-top: 4%;
+    margin-left: 12%;
+    background-color: white;
+    height: 35%;
+    padding: 5px 30px 5px 30px;
+    border-radius: 10px;
+  }
+
+  .textmobileScoreR{
+    font-size: 25px;
+    margin-top: 5.5%;
+  }
+
+  .textmobileScore{
+    font-size: 25px;
+    margin-top: 5.5%;
+  }
+ 
+  .textMobileS{
+    font-size: 15px;
+    padding-top: 0px;
+  }
+
+  .columnMobileM{
+    margin-top: 20px;
+  }
+
+  .columnMobileL {
+    border-radius: 10px;
+  }
+
+  .columnMobileR {
+    border-radius: 10px;
+
+  }
+
+}
+
+@media screen and (max-width: 812px) and (orientation: portrait) {
+  .portrait{
+    display: block;
+    padding-top: 30%;
+    padding-bottom: auto;
+    color: white;
+    padding-left: 20%;
+    font-size: 20px;
+  }
+
+  .rowMobile{
+    display: none;
+  }
+
+  .gameM{
+    display: none;
+  }
+
+  .divFull{
+    display: none;
+  }
+}

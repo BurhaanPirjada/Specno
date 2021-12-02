@@ -1,0 +1,99 @@
+<div class="page">
+    <div class="divOne">
+      <h1 class="headingOne">Memory</h1>
+      <a class="exitButton">Exit Game</a>
+  
+      <h1 class="headingTwo">Are you ready to play?</h1>
+  
+    </div>
+  
+    <div class="divThree">
+      <div class="row">
+        <div class="column">
+          <img class="imageL" src="../../assets/img/astronaut1-removebg-preview.png">
+        </div>
+    
+        <div class="column">
+          <img class="imageR" src="../../assets/img/astronaut2-removebg-preview.png">
+        </div>
+      </div>
+    
+        <div>
+          <form (ngSubmit)="onSubmit()" name="myForm" [formGroup]="myForm">
+              <div class="row" style="text-align: center;">
+                  <div class="column">
+                <div class="containL">
+                  <input type="text" [formControl]="nameP1FormControl"  class="s" name="P1Name" [(ngModel)]="player1.name" placeholder="Your name.." required />
+                </div>
+                </div>
+      
+                <div class="column">
+                  <div class="containR">
+                    <input type="text" [formControl]="nameP2FormControl"  class="s" name="P2Name" [(ngModel)]="player2.name" placeholder="Your name.." required />
+                  </div>
+        
+                </div>
+              </div>
+              <div class="startDiv">
+                <button class="startButton" (click)="onSubmit()"> Let's Play </button>
+              </div>
+          </form>
+        </div>    
+    </div>
+
+    <div class="divMobile">
+      
+      <div class="divOneM">
+        <h1 class="headingOne">Memory</h1>
+        <a class="exitButton">Exit Game</a>
+        
+      </div>
+
+      <div class="divTwoM">
+        <h1 class="headingTwo">Are you ready to play?</h1>
+
+        <div class="row">
+          <div class="column">
+            <img class="imageL" src="../../assets/img/astronaut1-removebg-preview.png">
+          </div>
+      
+          <div class="column">
+            <img class="imageR" src="../../assets/img/astronaut2-removebg-preview.png">
+          </div>
+        </div>
+      
+          <div>
+            <form (ngSubmit)="onSubmit()" name="myForm" [formGroup]="myForm">
+                <div class="row" style="text-align: center;">
+                    <div class="column">
+                  <div class="containL">
+                    <input type="text" [formControl]="nameP1FormControl"  class="inputclass" name="P1Name" [(ngModel)]="player1.name" placeholder="Your name.." required />
+                  </div>
+                  </div>
+        
+                  <div class="column">
+                    <div class="containR">
+                      <input type="text" [formControl]="nameP2FormControl"  class="inputclass" name="P2Name" [(ngModel)]="player2.name" placeholder="Your name.." required />
+                    </div>
+          
+                  </div>
+                </div>
+                <div class="startDiv">
+                  <button class="startButton" (click)="onSubmit()"> LET'S PLAY! </button>
+                </div>
+            </form>
+          </div> 
+
+      </div>
+
+
+    </div>
+
+    <div class="portrait">
+      <h1> 
+        Please Rotate Device
+      </h1>
+    </div>
+      
+
+</div>

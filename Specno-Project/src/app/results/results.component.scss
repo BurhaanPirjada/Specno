@@ -1,0 +1,299 @@
+.page{
+    background: 
+    radial-gradient(circle at 60% 0,
+    #3380BA,
+      rgba(255, 255, 255, 0) 90.71%),
+    radial-gradient(circle at 6.7% 75%,
+    #245a83,
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 45%,
+    #173b57,
+      rgba(255, 255, 255, 0) 50.71%) ;
+    height: 87vh;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.portrait{
+    display: none;
+}
+
+.headingOne{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+
+.headingTwo{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 1.5%;
+}
+
+.winnerRow{
+    background-image: linear-gradient(to right,rgb(255, 217, 117), rgb(255, 245, 219));
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 1% 0 1% 0;
+    border-radius: 10px;
+    height: 7%;
+    position: relative;
+ 
+}
+
+.trophyCol{
+    position: absolute;
+    left: 0;
+    margin-left: -5vw;
+}
+
+.secondRow{
+    background-color: white;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 1% 0 1% 0;
+    border-radius: 10px;
+    height: 7%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+ 
+}
+
+.cols{
+    width: 25%;
+    float: left;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.textCols{
+    width: 25%;
+    float: left;
+    vertical-align: middle;
+    height: 100%;
+    margin-top: 4%;
+}
+
+.imgClass{
+    height: 70px;
+}
+
+.text{
+    color: #0D4477;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.text2{
+    color: #0D4477;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.btnPlay{
+    background-color: #A7DAFF;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: #0D4477;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #A7DAFF;
+    transition: ease 0.5s;
+}
+
+.btnPlay:hover{
+    background-color: #ffffff;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: #0D4477;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: ease 0.5s;
+}
+
+.bg{
+    height: 100%;
+    // width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnExit{
+    display: none;
+}
+
+@media screen and (max-width: 1792px) and (orientation: landscape) {
+
+    .page{
+        background: 
+        radial-gradient(circle at 60% 0,
+        #3380BA,
+          rgba(255, 255, 255, 0) 90.71%),
+        radial-gradient(circle at 6.7% 75%,
+        #245a83,
+          rgba(0,0,255,0) 70.71%),
+        radial-gradient(circle at 93.3% 45%,
+        #173b57,
+          rgba(255, 255, 255, 0) 50.71%) ;
+        height: 95vh;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .btnPlay{
+        display: none;
+    }
+
+    .bg{
+        height: 90%;
+        padding-top: 2%;
+        width: 70%;
+        background-image: linear-gradient(to bottom right, #C2DDEF, #7BB1D8);
+        border-radius: 10px;
+    }
+
+    .cols{
+        width: 25%;
+        float: left;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .imgClass{
+        height: 90px;
+        margin-top: 10px;
+    }
+    
+    .textCols{
+        width: 25%;
+        float: left;
+        height: 100%;
+        margin-top: 5%;
+    }
+
+    .text{
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .text2{
+        font-size: 25px;
+        margin-bottom: 2%;
+    }
+
+    .btnExit{
+        display: block;
+        float: right;
+
+        background-color: #D4190C;
+        padding: 1% 2% 1% 2%;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        border: 2px solid #D4190C;
+        transition: ease 0.5s;
+        
+        margin-right: 40px;
+    }
+
+
+    .winnerRow{
+        width: 70%;     
+        height: 15%;
+    }
+
+    .secondRow{
+        width: 70%;     
+        height: 15%;
+
+    }
+
+    .trophyCol{
+       margin-top: 2%;
+    }
+    
+
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+
+    .headingOne{
+        font-size: 20px;
+    }
+
+    .headingTwo{
+        font-size: 35px;
+    }
+
+    .imgClassM{
+        height: 100px;
+    }
+
+    .btnExit{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .winnerRow{
+        height: 10%;
+    }
+
+    .secondRow{
+        height: 10%;
+    }
+
+    .trophyCol{
+        height: 10px;
+        margin-top: 0%;
+
+    }
+
+    .imgTrophy{
+        height: 30px;
+    }
+
+    .imgClass{
+        height: 35px;
+        margin-top: 0px;
+
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .textCols{
+        margin-top: 2%;
+    }
+
+    .text2{
+        font-size: 15px;
+
+    }
+
+}
+
+@media screen and (max-width: 812px) and (orientation: portrait) {
+    .portrait{
+      display: block;
+      padding-top: 40%;
+      padding-bottom: auto;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .bg{
+        display: none;
+    }
+}  

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "specno-project-e34cc": {
+      "hosting": {
+        "Specno-Project": [
+          "specno-project-e34cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "specno-project-e34cc"
+  }
+}

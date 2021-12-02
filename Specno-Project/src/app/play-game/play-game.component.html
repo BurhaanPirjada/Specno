@@ -1,0 +1,120 @@
+<div class="page">
+    <div class="divFull">
+      <div class="divOne">
+        <h1 class="headingOne">Memory</h1>
+        <a (click)="onRestart()" class="restartButton">Restart Game</a>
+        <a (click)="onExit()" class="exitButton">Exit Game</a>
+      </div>
+  
+      <div class="game">
+        <div class="row">
+          <div class="leftC">
+            <div class="column left">
+              <div class="blockL">
+                <img class="imageP1" src="../../assets/img/astronaut1-removebg-preview.png">
+                <h1>{{player1name}}</h1>
+                <h1>Score: {{ player1score }}</h1>
+  
+                <div class="turnDivL" *ngIf="player1Turn">
+                  <h1 class="textturn2">It's Your Turn</h1>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="column middle" >
+            <div class="blockM" *ngIf="!isMatch">
+              <div class="grid p-16">
+                <app-game *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+                </app-game>
+              </div>
+            </div>
+            <div class="blockMM" *ngIf="isMatch"></div>
+          </div>
+  
+          <div class="leftC">
+            <div class="column left">
+              <div class="blockR">
+                <img class="imageP2" src="../../assets/img/astronaut2-removebg-preview.png">
+                <h1>{{player2name}}</h1>
+                <h1>Score: {{ player2score }} </h1>
+  
+                <div class="turnDivR" *ngIf="!player1Turn">
+                  <h1 class="textturn">It's Your Turn</h1>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+      <div class="gameM">
+        <div class="divOne">
+        <h1 class="headingOne">Memory</h1>
+        <a (click)="onRestart()" class="restartButton">Restart Game</a>
+        <a (click)="onExit()" class="exitButton">Exit Game</a>
+      </div>
+  
+            <div *ngIf="!isMatch" class="gameBg" >
+              <div >
+                <div class="grid p-16">
+                  <app-game *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+                  </app-game>
+                </div>
+              </div>
+            </div>
+            <div class="gameBgMatch" *ngIf="isMatch"></div>
+      </div>
+  
+      <div>
+        <div class="rowMobile">
+  
+          <div class="columnMobileL">
+            <div class="mobCol">
+              <img class="imageP1" src="../../assets/img/astronaut1-removebg-preview.png">
+            </div>
+            <div class="mobCol">
+              <a class="textMobileP"> {{ player1name }} </a>
+            </div>
+            <div class="mobCol" *ngIf="player1Turn">
+              <a class="textMobileT"> It's Your Turn </a>
+            </div>
+            <div class="mobCol">
+              <a class="textmobileScore">{{ player1score }}</a>
+            </div>
+          </div>
+  
+          <div class="columnMobileM">
+            <a class="textMobileS">Score</a>
+          </div>
+  
+          <div class="columnMobileR">
+            <div >
+              <a class="textmobileScoreR">{{ player2score }} </a>
+  
+            </div>
+            <div *ngIf="!player1Turn">
+              <a class="textMobileTR"> It's Your Turn </a>
+            </div>
+            <div class="mobColRText">
+              <a class="textMobileP">{{ player2name }}</a>
+            </div>
+            <div class="mobColR">
+              <img class="imageP2" src="../../assets/img/astronaut2-removebg-preview.png">
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <h1> 
+          Please Rotate Device
+        </h1>
+      </div>
+  </div>
+  

@@ -1,0 +1,8 @@
+<div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
+    <div class="back">
+        <img src="../../assets/img/Peter River 14.png">
+    </div>
+    <div class="front">
+        <img [src]="data.imageId">
+    </div>
+</div>

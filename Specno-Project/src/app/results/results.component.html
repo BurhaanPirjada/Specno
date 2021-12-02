@@ -1,0 +1,66 @@
+<div class="page">
+
+    <a (click)="onRestart()" class="btnExit">Exit Game</a>
+    
+    <div class="bg">
+    <div>
+        <h1 class="headingOne"> Well Done!</h1>
+        <h1 class="headingTwo"> Player {{ num }}</h1>
+    </div>
+    <div>
+        <img class="imgClassM" src="../../assets/img/winner-removebg-preview.png">
+    </div>
+
+    <div class="winnerRow">
+        <div class="trophyCol">
+            <img class="imgTrophy" src="../../assets/img/Trophy.png">
+        </div>
+        <div class="cols">
+
+            <img *ngIf="winnerP1" class="imgClass" src="../../assets/img/astronaut1-removebg-preview.png">
+            <img *ngIf="!winnerP1" class="imgClass" src="../../assets/img/astronaut2-removebg-preview.png">
+
+        </div>
+        <div class="textCols">
+            <a class="text">1st Place </a>
+
+        </div>
+        <div class="textCols">
+            <a *ngIf="winnerP1" class="text2"> {{ player1name }} </a>
+            <a *ngIf="!winnerP1" class="text2"> {{ player2name }} </a>
+
+        </div>
+        <div class="textCols">
+            <a *ngIf="winnerP1" class="text2"> Score: {{ player1score }} </a>
+            <a *ngIf="!winnerP1" class="text2"> Score: {{ player2score }} </a>
+        </div>
+    </div>
+
+    <div class="secondRow">
+        <div class="cols">
+            <img *ngIf="!winnerP1" class="imgClass" src="../../assets/img/astronaut1-removebg-preview.png">
+            <img *ngIf="winnerP1" class="imgClass" src="../../assets/img/astronaut2-removebg-preview.png">
+        </div>
+        <div class="textCols">
+            <a class="text">2nd Place </a>
+        </div>
+        <div class="textCols">
+            <a *ngIf="!winnerP1" class="text2"> {{ player1name }} </a>
+            <a *ngIf="winnerP1" class="text2"> {{ player2name }} </a>
+        </div>
+        <div class="textCols">
+            <a *ngIf="!winnerP1" class="text2"> Score: {{ player1score }} </a>
+            <a *ngIf="winnerP1" class="text2"> Score: {{ player2score }} </a>
+
+        </div>
+    </div>
+    <br>
+    <a (click)="onRestart()" class="btnPlay">PLAY AGAIN</a>
+    </div>
+
+    <div class="portrait">
+        <h1> 
+          Please Rotate Device
+        </h1>
+      </div>
+</div>
