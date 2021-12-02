@@ -58,7 +58,7 @@ If you are accessing the deployed version:
 
 ## Room for Improvement
 - The main thing I would have liked to improve, would be to make the design responsive to all devices, such as mobile phones, ipads and all other screen sizes. 
-##  Currently, the site is only responsive on PC, iPhone X (812px x 375px) and iPhone 11 (1792px x 828px).
+*  Currently, the site is only responsive on PC, iPhone X (812px x 375px) and iPhone 11 (1792px x 828px).
 
 - I could have tracked the score with a state management system (Akita, NGRX, NGXS, Redux).
 
