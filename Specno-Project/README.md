@@ -8,7 +8,6 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [How to run application](#How-to-run-application)
-* [Screenshots](#screenshots)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
 
@@ -48,12 +47,6 @@ If you are accessing the deployed version:
 - When a player matches 2 cards, he is awarded with a point, which he can keep track of under each player's name. (Score)
 - The cards that have been matched are removed from the board.
 - Once all cards have been matched, the player with the highest score wins 1st Place. 
-
-
-## Screenshots
-(src\assets\img\exampleimg1.png)
-(src\assets\img\exampleimg2.png)
-(src\assets\img\exampleimg3.png)
 
 
 ## Room for Improvement
