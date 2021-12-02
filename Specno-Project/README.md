@@ -2,7 +2,7 @@
 > Memory (also known as Concentration) is a card game played with one or more players. Using a standard card deck (including both jokers) the players shuffle the deck and lay all of the cards face down on a surface and two cards are flipped face up over each turn. The objective of the game is to turn over pairs of matching cards. 
 
 
-> Live demo [_here_](https://specno-project-e34cc.web.app/home). 
+> Deployed Version: [_here_](https://specno-project-e34cc.web.app/home). 
 
 ## Table of Contents
 * [General Info](#general-information)
